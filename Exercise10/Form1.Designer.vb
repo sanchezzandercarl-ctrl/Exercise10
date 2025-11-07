@@ -22,21 +22,12 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.lblInstruction = New System.Windows.Forms.Label()
         Me.txtNumber = New System.Windows.Forms.TextBox()
         Me.btnAdd = New System.Windows.Forms.Button()
         Me.btnSave = New System.Windows.Forms.Button()
         Me.btnLoad = New System.Windows.Forms.Button()
         Me.lstNumbers = New System.Windows.Forms.ListBox()
         Me.SuspendLayout()
-        '
-        'lblInstruction
-        '
-        Me.lblInstruction.BackColor = System.Drawing.SystemColors.ActiveBorder
-        Me.lblInstruction.Location = New System.Drawing.Point(12, 136)
-        Me.lblInstruction.Name = "lblInstruction"
-        Me.lblInstruction.Size = New System.Drawing.Size(255, 118)
-        Me.lblInstruction.TabIndex = 0
         '
         'txtNumber
         '
@@ -48,27 +39,27 @@ Partial Class Form1
         '
         'btnAdd
         '
-        Me.btnAdd.Location = New System.Drawing.Point(295, 12)
+        Me.btnAdd.Location = New System.Drawing.Point(12, 275)
         Me.btnAdd.Name = "btnAdd"
-        Me.btnAdd.Size = New System.Drawing.Size(136, 62)
+        Me.btnAdd.Size = New System.Drawing.Size(133, 47)
         Me.btnAdd.TabIndex = 2
         Me.btnAdd.Text = "ADD"
         Me.btnAdd.UseVisualStyleBackColor = True
         '
         'btnSave
         '
-        Me.btnSave.Location = New System.Drawing.Point(295, 80)
+        Me.btnSave.Location = New System.Drawing.Point(12, 328)
         Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(136, 62)
+        Me.btnSave.Size = New System.Drawing.Size(133, 47)
         Me.btnSave.TabIndex = 3
         Me.btnSave.Text = "SAVE"
         Me.btnSave.UseVisualStyleBackColor = True
         '
         'btnLoad
         '
-        Me.btnLoad.Location = New System.Drawing.Point(295, 148)
+        Me.btnLoad.Location = New System.Drawing.Point(12, 381)
         Me.btnLoad.Name = "btnLoad"
-        Me.btnLoad.Size = New System.Drawing.Size(136, 62)
+        Me.btnLoad.Size = New System.Drawing.Size(133, 47)
         Me.btnLoad.TabIndex = 4
         Me.btnLoad.Text = "LOAD"
         Me.btnLoad.UseVisualStyleBackColor = True
@@ -76,7 +67,7 @@ Partial Class Form1
         'lstNumbers
         '
         Me.lstNumbers.FormattingEnabled = True
-        Me.lstNumbers.Location = New System.Drawing.Point(12, 302)
+        Me.lstNumbers.Location = New System.Drawing.Point(12, 148)
         Me.lstNumbers.Name = "lstNumbers"
         Me.lstNumbers.Size = New System.Drawing.Size(255, 121)
         Me.lstNumbers.TabIndex = 5
@@ -85,21 +76,18 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(544, 450)
+        Me.ClientSize = New System.Drawing.Size(282, 441)
         Me.Controls.Add(Me.lstNumbers)
         Me.Controls.Add(Me.btnLoad)
         Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.btnAdd)
         Me.Controls.Add(Me.txtNumber)
-        Me.Controls.Add(Me.lblInstruction)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents lblInstruction As Label
     Friend WithEvents txtNumber As TextBox
     Friend WithEvents btnAdd As Button
     Friend WithEvents btnSave As Button

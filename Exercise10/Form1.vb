@@ -24,7 +24,7 @@ Public Class Form1
         End Using
         MessageBox.Show("Numbers saved to file: " & filePath)
     End Sub
-    Private Sub btnReadSort_Click(sender As Object, e As EventArgs) Handles btnLoad.Click
+    Private Sub btnLoad_Click(sender As Object, e As EventArgs) Handles btnLoad.Click
         If Not File.Exists(filePath) Then
             MessageBox.Show("File not found. Please save numbers first.")
             Return
