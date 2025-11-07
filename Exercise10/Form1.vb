@@ -24,7 +24,7 @@ Public Class Form1
         End Using
         MessageBox.Show("Numbers saved to file: " & filePath)
     End Sub
-    Private Sub btnLoad_Click(sender As Object, e As EventArgs) Handles btnLoad.Click
+    Private Sub btnLoad_Click(sender As Object, e As EventArgs) Handles btnReadSort.Click
         If Not File.Exists(filePath) Then
             MessageBox.Show("File not found. Please save numbers first.")
             Return
@@ -47,6 +47,6 @@ Public Class Form1
             lstNumbers.Items.Add(n)
         Next
 
-        MessageBox.Show("Numbers are Loaded!! Listing in Lowest to Highest")
+        MessageBox.Show("Numbers are Loaded!! Listing the numbers to Ascending Order")
     End Sub
 End Class
