@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,15 +20,14 @@ Partial Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.lblInstruction = New System.Windows.Forms.Label()
         Me.txtNumber = New System.Windows.Forms.TextBox()
         Me.btnAdd = New System.Windows.Forms.Button()
         Me.btnSave = New System.Windows.Forms.Button()
-        Me.btnReadSort = New System.Windows.Forms.Button()
+        Me.btnLoad = New System.Windows.Forms.Button()
         Me.lstNumbers = New System.Windows.Forms.ListBox()
-        Me.lblResult = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lblInstruction
@@ -65,14 +64,14 @@ Partial Class Form1
         Me.btnSave.Text = "SAVE"
         Me.btnSave.UseVisualStyleBackColor = True
         '
-        'btnReadSort
+        'btnLoad
         '
-        Me.btnReadSort.Location = New System.Drawing.Point(295, 148)
-        Me.btnReadSort.Name = "btnReadSort"
-        Me.btnReadSort.Size = New System.Drawing.Size(136, 62)
-        Me.btnReadSort.TabIndex = 4
-        Me.btnReadSort.Text = "SORT"
-        Me.btnReadSort.UseVisualStyleBackColor = True
+        Me.btnLoad.Location = New System.Drawing.Point(295, 148)
+        Me.btnLoad.Name = "btnLoad"
+        Me.btnLoad.Size = New System.Drawing.Size(136, 62)
+        Me.btnLoad.TabIndex = 4
+        Me.btnLoad.Text = "LOAD"
+        Me.btnLoad.UseVisualStyleBackColor = True
         '
         'lstNumbers
         '
@@ -82,22 +81,13 @@ Partial Class Form1
         Me.lstNumbers.Size = New System.Drawing.Size(255, 121)
         Me.lstNumbers.TabIndex = 5
         '
-        'lblResult
-        '
-        Me.lblResult.BackColor = System.Drawing.SystemColors.ActiveBorder
-        Me.lblResult.Location = New System.Drawing.Point(277, 302)
-        Me.lblResult.Name = "lblResult"
-        Me.lblResult.Size = New System.Drawing.Size(255, 117)
-        Me.lblResult.TabIndex = 6
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(544, 450)
-        Me.Controls.Add(Me.lblResult)
         Me.Controls.Add(Me.lstNumbers)
-        Me.Controls.Add(Me.btnReadSort)
+        Me.Controls.Add(Me.btnLoad)
         Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.btnAdd)
         Me.Controls.Add(Me.txtNumber)
@@ -113,7 +103,6 @@ Partial Class Form1
     Friend WithEvents txtNumber As TextBox
     Friend WithEvents btnAdd As Button
     Friend WithEvents btnSave As Button
-    Friend WithEvents btnReadSort As Button
+    Friend WithEvents btnLoad As Button
     Friend WithEvents lstNumbers As ListBox
-    Friend WithEvents lblResult As Label
 End Class
