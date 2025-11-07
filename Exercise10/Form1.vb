@@ -4,7 +4,7 @@ Imports System.Linq
 Public Class Form1
     Dim numbers As New List(Of Integer)
     Dim filePath As String = "numbers.txt"
-    Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
+    Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnWrite.Click
         Dim num As Integer
         If Integer.TryParse(txtNumber.Text, num) Then
             numbers.Add(num)
@@ -16,7 +16,7 @@ Public Class Form1
         End If
     End Sub
 
-    Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
+    Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnRead.Click
         Using writer As New StreamWriter(filePath)
             For Each n In numbers
                 writer.WriteLine(n)
@@ -24,7 +24,7 @@ Public Class Form1
         End Using
         MessageBox.Show("Numbers saved to file: " & filePath)
     End Sub
-    Private Sub btnLoad_Click(sender As Object, e As EventArgs) Handles btnReadSort.Click
+    Private Sub btnLoad_Click(sender As Object, e As EventArgs) Handles btnSort.Click
         If Not File.Exists(filePath) Then
             MessageBox.Show("File not found. Please save numbers first.")
             Return
